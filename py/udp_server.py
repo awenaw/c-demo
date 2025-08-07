@@ -9,7 +9,9 @@ def udp_server():
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     
     # 绑定地址和端口
-    host = 'localhost'
+    # host = 'localhost'
+    host = '0.0.0.0'  # 监听所有网络接口
+    
     port = 8080
     server_socket.bind((host, port))
     
