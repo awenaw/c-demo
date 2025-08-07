@@ -2,8 +2,8 @@
 import socket
 import datetime
 
-# python3 udp_server.py
-
+# 服务端：python3 udp_server.py
+# 客户端：echo "996123" | nc -u -w 3 11.11.11.6 8080
 def udp_server():
     # 创建UDP socket
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
